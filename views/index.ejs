@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Document</title>
+</head>
+ 
+<body style="background-image: url('resources/images/degradado.jpg');"></body>
+    <div class="cont-box">
+        <h1>Bienvenido</h1>
+        <% if (login) { %>
+            <h1>Usuario: <strong><%= name %></strong></h1>
+            <a class="cta" href="logout">Salir</a>
+        <% }else { %>
+            <h1><strong><%= name %></strong></h1>
+            <a class="cta" href="login">¡Únete Ahora!</a>
+        <% } %>
+    </div>
+</body>
+
+</html>
